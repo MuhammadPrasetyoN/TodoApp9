@@ -1,13 +1,26 @@
-import React from "react";
-import { Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
-// Simple placeholder for the Todos tab
-const TodosScreen = () => {
+export default function Index() {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Todos</Text>
+    <View style={styles.container}>
+      <Text style={styles.content}>
+        Edit app/index.tsx to edit this screen3312.
+      </Text>
+      <Text style={styles.content}>test</Text>
     </View>
   );
-};
+}
 
-export default TodosScreen;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    gap: 20,
+  },
+  content: {
+    fontSize: 22,
+    fontWeight: "bold",
+  },
+});
